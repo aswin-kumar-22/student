@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{ % block title % }home{ % endblock title % }
+
+{% block content%}
+
+
+<br>
+<br>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'image/banner1.jpg' %}" class="d-block w-100 h-5" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'image/banner2.jpg' %}" class="d-block w-100 h-5" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'image/banner3.jpg' %}" class="d-block w-100 h-5" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br><br>
+  <div>
+    <h1 style="text-align: center;color: coral;"><u>About Our College</u></h1>
+  </div><br><br>
+  <div>
+    <h6 style="text-align: center ;margin: 5px;">
+        V V college is located on the easternmost part of Palakkad district, 
+        only 17 kms from Palakkad town and less than 10 kms from our border with Tamil Nadu, Walayar. 
+        It is easily reachable through NH544 connecting Palakkad with Coimbatore. 
+        The college campus sprawls over 17 acres of land providing enough space for any level of future growth and development. 
+        Situated away from urban congestion and pollution, the campus offers an ideal serene atmosphere for learning. 
+        It is surrounded by a picturesque landscape comprising paddy fields, green bushes and grassland, and ranges of the Walayar 
+        hills in the background with forest clad valleys and trickling streams. Planted greenery around the college adds up to the beauty. 
+        Plentiful supply of pure water drawn out of a perennial open well is an added blessing, particularly in a place like Palakkad. 
+        V V College, Kanjikode which has made a humble start with just three UG programmes in 2002, now proudly functions with 10 UG 
+        and 2 PG programmes. The programmes of study have been selected with a proper awareness regarding their relevance and 
+        importance in the current world scenario. Programmes in Science, commerce, business, and Arts are offered. 
+        The teaching and learning process has been so designed that it meets the vision and mission envisaged by the management.
+    </h6>
+  </div><br><br>
+
+  
+{% endblock content %}

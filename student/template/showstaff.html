@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{ % block title % }show staff{ % endblock title % }
+
+{% block content%}
+<div class="m-5">
+<table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Staff Name</th>
+            <th scope="col">Staff Email</th>
+            <th scope="col">Staff Phone Number</th>
+        </tr>
+    </thead>
+        {% for i in form %}
+    <tbody>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </tbody>
+        {% endfor %}
+</table>
+</div>
+{% endblock content %}

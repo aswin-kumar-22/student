@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{ % block title % }show student{ % endblock title % }
+{% block content%}
+
+<h2 class="text-align:center;">Student Edit Form</h2>
+<div>
+    <form>
+
+{% csrf_token %}{% for i in forms %}
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">Student Name</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">Student Email</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">Student Phone Number</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">Student Address</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon3">Student Place</span>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div>
+    <div class="card-footer ">
+        <input type="submit" value="edit" class="btn btn-dark text-secondary w-25">
+    </div>
+</div>
+
+{% endfor %}
+</form>
+</div>
+
+{% endblock %}
